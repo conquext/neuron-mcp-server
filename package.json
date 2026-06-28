@@ -1,0 +1,61 @@
+{
+  "name": "neuron-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Neuron — the WhatsApp automation platform. 120+ tools for AI chatbots, broadcasts, campaigns, contacts, knowledge bases, newsletters, and more.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "neuron-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "whatsapp",
+    "whatsapp-api",
+    "whatsapp-automation",
+    "chatbot",
+    "ai",
+    "claude",
+    "cursor",
+    "neuron",
+    "messaging",
+    "broadcast",
+    "campaign",
+    "knowledge-base",
+    "newsletter",
+    "contacts"
+  ],
+  "author": "Neuron <hello@neuron.ng>",
+  "license": "MIT",
+  "homepage": "https://neuron.ng",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conquext/neuron-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/conquext/neuron-mcp-server/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "axios": "^1.7.9",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "form-data": "^4.0.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
