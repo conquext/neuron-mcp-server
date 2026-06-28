@@ -1,6 +1,7 @@
 {
   "name": "neuron-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "mcpName": "io.github.conquext/neuron",
   "description": "MCP server for Neuron — the WhatsApp automation platform. 120+ tools for AI chatbots, broadcasts, campaigns, contacts, knowledge bases, newsletters, and more.",
   "type": "module",
   "main": "dist/index.js",
